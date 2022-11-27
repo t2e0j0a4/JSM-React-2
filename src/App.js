@@ -4,7 +4,9 @@ import "./App.css";
 
 import { Navbar } from "./Components";
 
-import { About , Chef , FindUs , Footer , Gallery , Header , Intro , Laurels , Menu } from "./Containers";
+// import { About , Chef , FindUs , Footer , Gallery , Header , Intro , Laurels , Menu } from "./Containers";
+
+import { Header , About } from "./Containers";
 
 const App = () => {
   return (
