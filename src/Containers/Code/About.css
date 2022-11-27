@@ -1,0 +1,123 @@
+.app__aboutus {
+    width: 100%;
+    position: relative;
+    background-color: var(--color-about);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.app__aboutus-overlay {
+    z-index: 0;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app__aboutus-overlay img {
+    width: 391px;
+    height: 415px;
+}
+
+.app__aboutus-content {
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app__aboutus-content_about {
+    flex: 0.4;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.app__aboutus-content_about img {
+    transform: rotate(180deg);
+}
+
+.app__aboutus-content_knife {
+    flex: 0.2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app__aboutus-content_knife img {
+    width: 84px;
+}
+
+.app__aboutus-content_history {
+    flex: 0.4;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.content__head {
+    color: var(--color-golden);
+    font-size: 40px;
+}
+
+.content__desc {
+    color: var(--color-grey);
+    font-weight: 400;
+    font-size: 16px;
+    text-align: left;
+    letter-spacing: 0.01em;
+    margin: 1rem 0;
+    font-family: var(--font-alt);
+}
+
+.app__aboutus-content_about .content__desc {
+    text-align: right ;
+}
+
+.content__btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 32px;
+    width: 141px;
+    height: 44px;
+    background: var(--color-golden);
+    font-weight: 700;
+    font-size: 16px;
+    color: #0C0C0C;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    box-shadow: 0px 2px 12px var(--color-gray);
+}
+
+.content__btn:hover {
+    background-color: var(--color-grey);
+    transition: background-color 0.4s ease-in-out;
+}
+
+@media screen and (max-width : 900px) {
+    
+    .app__aboutus-content {
+        z-index: 5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+}
+
+@media screen and (max-width : 550px) {
+    .app__aboutus-overlay img {
+        width: 90%;
+        height: 550px;
+    }
+}

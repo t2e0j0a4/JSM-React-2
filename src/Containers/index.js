@@ -1,0 +1,9 @@
+export {default as About} from "./Code/About";
+export {default as Chef} from "./Code/Chef";
+export {default as FindUs} from "./Code/FindUs";
+export {default as Footer} from "./Code/Footer";
+export {default as Gallery} from "./Code/Gallery";
+export {default as Header} from "./Code/Header";
+export {default as Intro} from "./Code/Intro";
+export {default as Laurels} from "./Code/Laurels";
+export {default as Menu} from "./Code/Menu";
